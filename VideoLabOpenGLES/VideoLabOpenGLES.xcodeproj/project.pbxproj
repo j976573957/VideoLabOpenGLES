@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04006C662C203D640005D2E9 /* OpenGLRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04006C652C203D640005D2E9 /* OpenGLRender.swift */; };
+		04006C682C2045BD0005D2E9 /* ShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04006C672C2045BD0005D2E9 /* ShaderProgram.swift */; };
+		0400B9E62C1C23B600FF781B /* AudioRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B9E52C1C23B600FF781B /* AudioRenderLayerGroup.swift */; };
+		0400B9E82C1C2EC500FF781B /* VideoCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B9E72C1C2EC500FF781B /* VideoCompositionInstruction.swift */; };
+		0400B9EA2C1C3B0500FF781B /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B9E92C1C3B0500FF781B /* VideoCompositor.swift */; };
+		0400B9EC2C1C4BEB00FF781B /* LayerCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400B9EB2C1C4BEB00FF781B /* LayerCompositor.swift */; };
+		0402BA922C5A1F1500B67650 /* TextureCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402BA912C5A1F1500B67650 /* TextureCache.swift */; };
+		0402BAAB2C5A465000B67650 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA952C5A465000B67650 /* LUT_M01.png */; };
+		0402BAAC2C5A465000B67650 /* LUT_M02.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA962C5A465000B67650 /* LUT_M02.png */; };
+		0402BAAD2C5A465000B67650 /* LUT_M03.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA972C5A465000B67650 /* LUT_M03.png */; };
+		0402BAAE2C5A465000B67650 /* LUT_M07.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA982C5A465000B67650 /* LUT_M07.png */; };
+		0402BAAF2C5A465000B67650 /* LUT_M06.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA992C5A465000B67650 /* LUT_M06.png */; };
+		0402BAB02C5A465000B67650 /* LUT_M12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9A2C5A465000B67650 /* LUT_M12.png */; };
+		0402BAB12C5A465000B67650 /* LUT_M11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9B2C5A465000B67650 /* LUT_M11.png */; };
+		0402BAB22C5A465000B67650 /* LUT_M05.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9C2C5A465000B67650 /* LUT_M05.png */; };
+		0402BAB32C5A465000B67650 /* LUT_M08.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9D2C5A465000B67650 /* LUT_M08.png */; };
+		0402BAB42C5A465000B67650 /* LUT_M09.png in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9E2C5A465000B67650 /* LUT_M09.png */; };
+		0402BAB52C5A465000B67650 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0402BA9F2C5A465000B67650 /* video4.MOV */; };
+		0402BAB62C5A465000B67650 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA02C5A465000B67650 /* video3.MOV */; };
+		0402BAB72C5A465000B67650 /* video2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA12C5A465000B67650 /* video2.MOV */; };
+		0402BAB82C5A465000B67650 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA22C5A465000B67650 /* video1.MOV */; };
+		0402BAB92C5A465000B67650 /* image3.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA32C5A465000B67650 /* image3.HEIC */; };
+		0402BABC2C5A465000B67650 /* image2.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA72C5A465000B67650 /* image2.HEIC */; };
+		0402BABE2C5A465000B67650 /* test1.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA92C5A465000B67650 /* test1.MP4 */; };
+		0402BABF2C5A465000B67650 /* image1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAAA2C5A465000B67650 /* image1.JPG */; };
+		0402BAC22C5A46A800B67650 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402BAC02C5A46A800B67650 /* PlayerViewController.swift */; };
+		0402BAC42C5A471700B67650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA52C5A465000B67650 /* LaunchScreen.xib */; };
+		0402BAC52C5A471D00B67650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0402BAA62C5A465000B67650 /* Main.storyboard */; };
+		0402BAC72C5A48C400B67650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402BAC62C5A48C400B67650 /* ViewController.swift */; };
+		0405A66A2C5CBBB800E70689 /* YUVConversion.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6642C5CBBB700E70689 /* YUVConversion.vsh */; };
+		0405A66B2C5CBBB800E70689 /* YUVConversion.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6652C5CBBB700E70689 /* YUVConversion.fsh */; };
+		0405A66C2C5CBBB800E70689 /* NormalBlend.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6662C5CBBB700E70689 /* NormalBlend.vsh */; };
+		0405A66D2C5CBBB800E70689 /* Normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6672C5CBBB700E70689 /* Normal.fsh */; };
+		0405A66E2C5CBBB800E70689 /* Normal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6682C5CBBB800E70689 /* Normal.vsh */; };
+		0405A66F2C5CBBB800E70689 /* NormalBlend.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0405A6692C5CBBB800E70689 /* NormalBlend.fsh */; };
+		040781482C1AC42F002F5B00 /* PHAssetVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040781472C1AC42F002F5B00 /* PHAssetVideoSource.swift */; };
+		0407814A2C1AC5BC002F5B00 /* PHAssetImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040781492C1AC5BC002F5B00 /* PHAssetImageSource.swift */; };
+		0407814C2C1AD5C3002F5B00 /* VideoRenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407814B2C1AD5C3002F5B00 /* VideoRenderLayerGroup.swift */; };
+		040896052C806DE50092469E /* LookupFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 040896012C8065B90092469E /* LookupFilter.fsh */; };
+		040896062C806DE70092469E /* LookupFilter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 040896022C8065DD0092469E /* LookupFilter.vsh */; };
+		040896072C806DE90092469E /* BrightnessFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 040896032C8066990092469E /* BrightnessFilter.fsh */; };
+		040896082C806DEC0092469E /* BrightnessFilter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 040896042C8066D60092469E /* BrightnessFilter.vsh */; };
+		0408960A2C8079050092469E /* ZoomBlurFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 040896092C8079050092469E /* ZoomBlurFilter.fsh */; };
+		0408960C2C80790B0092469E /* ZoomBlurFilter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0408960B2C80790B0092469E /* ZoomBlurFilter.vsh */; };
+		040C52F72C12E34900344898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C52F62C12E34900344898 /* AppDelegate.swift */; };
+		040C53002C12E34A00344898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040C52FF2C12E34A00344898 /* Assets.xcassets */; };
+		040C530E2C12E34A00344898 /* VideoLabOpenGLESTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C530D2C12E34A00344898 /* VideoLabOpenGLESTests.swift */; };
+		040C53182C12E34A00344898 /* VideoLabOpenGLESUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53172C12E34A00344898 /* VideoLabOpenGLESUITests.swift */; };
+		040C531A2C12E34A00344898 /* VideoLabOpenGLESUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53192C12E34A00344898 /* VideoLabOpenGLESUITestsLaunchTests.swift */; };
+		040C53312C12E41600344898 /* BlankVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 040C53302C12E41600344898 /* BlankVideo.mov */; };
+		040C53352C12E48F00344898 /* VideoLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53342C12E48F00344898 /* VideoLab.swift */; };
+		040C53372C12E76300344898 /* RenderComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53362C12E76300344898 /* RenderComposition.swift */; };
+		040C533B2C12E80A00344898 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53382C12E80A00344898 /* Color.swift */; };
+		040C533C2C12E80B00344898 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53392C12E80A00344898 /* Position.swift */; };
+		040C533D2C12E80B00344898 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C533A2C12E80A00344898 /* Size.swift */; };
+		040C533F2C12EA7F00344898 /* RenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C533E2C12EA7F00344898 /* RenderLayer.swift */; };
+		040C53412C12EBF800344898 /* KeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53402C12EBF800344898 /* KeyframeAnimation.swift */; };
+		040C53432C12ED4E00344898 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C53422C12ED4E00344898 /* TimingFunction.swift */; };
+		040F03D52C184E4C00208D89 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03D42C184E4C00208D89 /* Source.swift */; };
+		040F03D72C184FCA00208D89 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03D62C184FCA00208D89 /* Texture.swift */; };
+		040F03D92C18509300208D89 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03D82C18509300208D89 /* Transform.swift */; };
+		040F03DB2C1855F700208D89 /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03DA2C1855F700208D89 /* MathLibrary.swift */; };
+		040F03E02C18593600208D89 /* BasicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03DF2C18593600208D89 /* BasicOperation.swift */; };
+		040F03E22C185C5200208D89 /* AudioConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03E12C185C5200208D89 /* AudioConfiguration.swift */; };
+		040F03E42C1860A200208D89 /* RenderLayerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F03E32C1860A200208D89 /* RenderLayerGroup.swift */; };
+		0410A1442C9ADD030081E7D6 /* LookupFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410A1432C9ADD030081E7D6 /* LookupFilter.swift */; };
+		0410A1462C9AE3D80081E7D6 /* ZoomBlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410A1452C9AE3D70081E7D6 /* ZoomBlurFilter.swift */; };
+		0421EA5D2C943BB40009DCC4 /* Passthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EA5C2C943BB40009DCC4 /* Passthrough.swift */; };
+		04E40BC02C929ADB00B634EE /* BrightnessAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E40BBF2C929ADB00B634EE /* BrightnessAdjustment.swift */; };
+		04F0BB4E2C212DCF006B8430 /* ShaderUniformSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0BB4D2C212DCF006B8430 /* ShaderUniformSettings.swift */; };
+		04F6DB852C198B2E00CE5B82 /* VideoRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6DB842C198B2E00CE5B82 /* VideoRenderLayer.swift */; };
+		04F6DB872C198B6C00CE5B82 /* AudioRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6DB862C198B6C00CE5B82 /* AudioRenderLayer.swift */; };
+		04F6DB892C19A82E00CE5B82 /* AVAssetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6DB882C19A82E00CE5B82 /* AVAssetSource.swift */; };
+		04F6DB8B2C19B42C00CE5B82 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6DB8A2C19B42C00CE5B82 /* ImageSource.swift */; };
+		04FFD1FE2C7EF72500BE8A34 /* TextAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFD1FD2C7EF72500BE8A34 /* TextAnimationLayer.swift */; };
+		04FFD2002C7F211D00BE8A34 /* TextOpacityAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFD1FF2C7F211D00BE8A34 /* TextOpacityAnimationLayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040C530A2C12E34A00344898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040C52EB2C12E34900344898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040C52F22C12E34900344898;
+			remoteInfo = VideoLabOpenGLES;
+		};
+		040C53142C12E34A00344898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040C52EB2C12E34900344898 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040C52F22C12E34900344898;
+			remoteInfo = VideoLabOpenGLES;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04006C652C203D640005D2E9 /* OpenGLRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLRender.swift; sourceTree = "<group>"; };
+		04006C672C2045BD0005D2E9 /* ShaderProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
+		0400B9E52C1C23B600FF781B /* AudioRenderLayerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRenderLayerGroup.swift; sourceTree = "<group>"; };
+		0400B9E72C1C2EC500FF781B /* VideoCompositionInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositionInstruction.swift; sourceTree = "<group>"; };
+		0400B9E92C1C3B0500FF781B /* VideoCompositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
+		0400B9EB2C1C4BEB00FF781B /* LayerCompositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerCompositor.swift; sourceTree = "<group>"; };
+		0402BA912C5A1F1500B67650 /* TextureCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureCache.swift; sourceTree = "<group>"; };
+		0402BA952C5A465000B67650 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
+		0402BA962C5A465000B67650 /* LUT_M02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M02.png; sourceTree = "<group>"; };
+		0402BA972C5A465000B67650 /* LUT_M03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M03.png; sourceTree = "<group>"; };
+		0402BA982C5A465000B67650 /* LUT_M07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M07.png; sourceTree = "<group>"; };
+		0402BA992C5A465000B67650 /* LUT_M06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M06.png; sourceTree = "<group>"; };
+		0402BA9A2C5A465000B67650 /* LUT_M12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M12.png; sourceTree = "<group>"; };
+		0402BA9B2C5A465000B67650 /* LUT_M11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M11.png; sourceTree = "<group>"; };
+		0402BA9C2C5A465000B67650 /* LUT_M05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M05.png; sourceTree = "<group>"; };
+		0402BA9D2C5A465000B67650 /* LUT_M08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M08.png; sourceTree = "<group>"; };
+		0402BA9E2C5A465000B67650 /* LUT_M09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M09.png; sourceTree = "<group>"; };
+		0402BA9F2C5A465000B67650 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
+		0402BAA02C5A465000B67650 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video3.MOV; sourceTree = "<group>"; };
+		0402BAA12C5A465000B67650 /* video2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video2.MOV; sourceTree = "<group>"; };
+		0402BAA22C5A465000B67650 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video1.MOV; sourceTree = "<group>"; };
+		0402BAA32C5A465000B67650 /* image3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3.HEIC; sourceTree = "<group>"; };
+		0402BAA52C5A465000B67650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		0402BAA62C5A465000B67650 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0402BAA72C5A465000B67650 /* image2.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image2.HEIC; sourceTree = "<group>"; };
+		0402BAA92C5A465000B67650 /* test1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.MP4; sourceTree = "<group>"; };
+		0402BAAA2C5A465000B67650 /* image1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.JPG; sourceTree = "<group>"; };
+		0402BAC02C5A46A800B67650 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		0402BAC62C5A48C400B67650 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0405A6642C5CBBB700E70689 /* YUVConversion.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUVConversion.vsh; sourceTree = "<group>"; };
+		0405A6652C5CBBB700E70689 /* YUVConversion.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = YUVConversion.fsh; sourceTree = "<group>"; };
+		0405A6662C5CBBB700E70689 /* NormalBlend.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NormalBlend.vsh; sourceTree = "<group>"; };
+		0405A6672C5CBBB700E70689 /* Normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.fsh; sourceTree = "<group>"; };
+		0405A6682C5CBBB800E70689 /* Normal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.vsh; sourceTree = "<group>"; };
+		0405A6692C5CBBB800E70689 /* NormalBlend.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NormalBlend.fsh; sourceTree = "<group>"; };
+		040781472C1AC42F002F5B00 /* PHAssetVideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetVideoSource.swift; sourceTree = "<group>"; };
+		040781492C1AC5BC002F5B00 /* PHAssetImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetImageSource.swift; sourceTree = "<group>"; };
+		0407814B2C1AD5C3002F5B00 /* VideoRenderLayerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderLayerGroup.swift; sourceTree = "<group>"; };
+		040896012C8065B90092469E /* LookupFilter.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LookupFilter.fsh; sourceTree = "<group>"; };
+		040896022C8065DD0092469E /* LookupFilter.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LookupFilter.vsh; sourceTree = "<group>"; };
+		040896032C8066990092469E /* BrightnessFilter.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BrightnessFilter.fsh; sourceTree = "<group>"; };
+		040896042C8066D60092469E /* BrightnessFilter.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = BrightnessFilter.vsh; sourceTree = "<group>"; };
+		040896092C8079050092469E /* ZoomBlurFilter.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlurFilter.fsh; sourceTree = "<group>"; };
+		0408960B2C80790B0092469E /* ZoomBlurFilter.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ZoomBlurFilter.vsh; sourceTree = "<group>"; };
+		040C52F32C12E34900344898 /* VideoLabOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoLabOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C52F62C12E34900344898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		040C52FF2C12E34A00344898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040C53042C12E34A00344898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040C53092C12E34A00344898 /* VideoLabOpenGLESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoLabOpenGLESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C530D2C12E34A00344898 /* VideoLabOpenGLESTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLabOpenGLESTests.swift; sourceTree = "<group>"; };
+		040C53132C12E34A00344898 /* VideoLabOpenGLESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoLabOpenGLESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C53172C12E34A00344898 /* VideoLabOpenGLESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLabOpenGLESUITests.swift; sourceTree = "<group>"; };
+		040C53192C12E34A00344898 /* VideoLabOpenGLESUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLabOpenGLESUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		040C53302C12E41600344898 /* BlankVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = BlankVideo.mov; sourceTree = "<group>"; };
+		040C53342C12E48F00344898 /* VideoLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLab.swift; sourceTree = "<group>"; };
+		040C53362C12E76300344898 /* RenderComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderComposition.swift; sourceTree = "<group>"; };
+		040C53382C12E80A00344898 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		040C53392C12E80A00344898 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		040C533A2C12E80A00344898 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		040C533E2C12EA7F00344898 /* RenderLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderLayer.swift; sourceTree = "<group>"; };
+		040C53402C12EBF800344898 /* KeyframeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeAnimation.swift; sourceTree = "<group>"; };
+		040C53422C12ED4E00344898 /* TimingFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
+		040F03D42C184E4C00208D89 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		040F03D62C184FCA00208D89 /* Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		040F03D82C18509300208D89 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		040F03DA2C1855F700208D89 /* MathLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		040F03DF2C18593600208D89 /* BasicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperation.swift; sourceTree = "<group>"; };
+		040F03E12C185C5200208D89 /* AudioConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConfiguration.swift; sourceTree = "<group>"; };
+		040F03E32C1860A200208D89 /* RenderLayerGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderLayerGroup.swift; sourceTree = "<group>"; };
+		0410A1432C9ADD030081E7D6 /* LookupFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
+		0410A1452C9AE3D70081E7D6 /* ZoomBlurFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBlurFilter.swift; sourceTree = "<group>"; };
+		0421EA5C2C943BB40009DCC4 /* Passthrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passthrough.swift; sourceTree = "<group>"; };
+		04E40BBF2C929ADB00B634EE /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
+		04F0BB4D2C212DCF006B8430 /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
+		04F6DB842C198B2E00CE5B82 /* VideoRenderLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRenderLayer.swift; sourceTree = "<group>"; };
+		04F6DB862C198B6C00CE5B82 /* AudioRenderLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRenderLayer.swift; sourceTree = "<group>"; };
+		04F6DB882C19A82E00CE5B82 /* AVAssetSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetSource.swift; sourceTree = "<group>"; };
+		04F6DB8A2C19B42C00CE5B82 /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		04FFD1FD2C7EF72500BE8A34 /* TextAnimationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimationLayer.swift; sourceTree = "<group>"; };
+		04FFD1FF2C7F211D00BE8A34 /* TextOpacityAnimationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOpacityAnimationLayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040C52F02C12E34900344898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C53062C12E34A00344898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C53102C12E34A00344898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0402BA932C5A465000B67650 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0402BA942C5A465000B67650 /* Filters */,
+				0402BA9F2C5A465000B67650 /* video4.MOV */,
+				0402BAA02C5A465000B67650 /* video3.MOV */,
+				0402BAA12C5A465000B67650 /* video2.MOV */,
+				0402BAA22C5A465000B67650 /* video1.MOV */,
+				0402BAA32C5A465000B67650 /* image3.HEIC */,
+				0402BAA42C5A465000B67650 /* Storyboard */,
+				0402BAA72C5A465000B67650 /* image2.HEIC */,
+				0402BAA92C5A465000B67650 /* test1.MP4 */,
+				0402BAAA2C5A465000B67650 /* image1.JPG */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0402BA942C5A465000B67650 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				0402BA952C5A465000B67650 /* LUT_M01.png */,
+				0402BA962C5A465000B67650 /* LUT_M02.png */,
+				0402BA972C5A465000B67650 /* LUT_M03.png */,
+				0402BA982C5A465000B67650 /* LUT_M07.png */,
+				0402BA992C5A465000B67650 /* LUT_M06.png */,
+				0402BA9A2C5A465000B67650 /* LUT_M12.png */,
+				0402BA9B2C5A465000B67650 /* LUT_M11.png */,
+				0402BA9C2C5A465000B67650 /* LUT_M05.png */,
+				0402BA9D2C5A465000B67650 /* LUT_M08.png */,
+				0402BA9E2C5A465000B67650 /* LUT_M09.png */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		0402BAA42C5A465000B67650 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0402BAA52C5A465000B67650 /* LaunchScreen.xib */,
+				0402BAA62C5A465000B67650 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0405A6632C5CBB9E00E70689 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0405A6672C5CBBB700E70689 /* Normal.fsh */,
+				0405A6682C5CBBB800E70689 /* Normal.vsh */,
+				0405A6692C5CBBB800E70689 /* NormalBlend.fsh */,
+				0405A6662C5CBBB700E70689 /* NormalBlend.vsh */,
+				0405A6652C5CBBB700E70689 /* YUVConversion.fsh */,
+				0405A6642C5CBBB700E70689 /* YUVConversion.vsh */,
+				040896012C8065B90092469E /* LookupFilter.fsh */,
+				040896022C8065DD0092469E /* LookupFilter.vsh */,
+				040896032C8066990092469E /* BrightnessFilter.fsh */,
+				040896042C8066D60092469E /* BrightnessFilter.vsh */,
+				040896092C8079050092469E /* ZoomBlurFilter.fsh */,
+				0408960B2C80790B0092469E /* ZoomBlurFilter.vsh */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		040C52EA2C12E34900344898 = {
+			isa = PBXGroup;
+			children = (
+				040C52F52C12E34900344898 /* VideoLabOpenGLES */,
+				040C530C2C12E34A00344898 /* VideoLabOpenGLESTests */,
+				040C53162C12E34A00344898 /* VideoLabOpenGLESUITests */,
+				040C52F42C12E34900344898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		040C52F42C12E34900344898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040C52F32C12E34900344898 /* VideoLabOpenGLES.app */,
+				040C53092C12E34A00344898 /* VideoLabOpenGLESTests.xctest */,
+				040C53132C12E34A00344898 /* VideoLabOpenGLESUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040C52F52C12E34900344898 /* VideoLabOpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				040C53262C12E37900344898 /* VideoLab */,
+				040C52F62C12E34900344898 /* AppDelegate.swift */,
+				0402BAC62C5A48C400B67650 /* ViewController.swift */,
+				0402BAC02C5A46A800B67650 /* PlayerViewController.swift */,
+				0402BA932C5A465000B67650 /* Resource */,
+				040C52FF2C12E34A00344898 /* Assets.xcassets */,
+				040C53042C12E34A00344898 /* Info.plist */,
+			);
+			path = VideoLabOpenGLES;
+			sourceTree = "<group>";
+		};
+		040C530C2C12E34A00344898 /* VideoLabOpenGLESTests */ = {
+			isa = PBXGroup;
+			children = (
+				040C530D2C12E34A00344898 /* VideoLabOpenGLESTests.swift */,
+			);
+			path = VideoLabOpenGLESTests;
+			sourceTree = "<group>";
+		};
+		040C53162C12E34A00344898 /* VideoLabOpenGLESUITests */ = {
+			isa = PBXGroup;
+			children = (
+				040C53172C12E34A00344898 /* VideoLabOpenGLESUITests.swift */,
+				040C53192C12E34A00344898 /* VideoLabOpenGLESUITestsLaunchTests.swift */,
+			);
+			path = VideoLabOpenGLESUITests;
+			sourceTree = "<group>";
+		};
+		040C53262C12E37900344898 /* VideoLab */ = {
+			isa = PBXGroup;
+			children = (
+				040C53342C12E48F00344898 /* VideoLab.swift */,
+				040C53362C12E76300344898 /* RenderComposition.swift */,
+				040C533E2C12EA7F00344898 /* RenderLayer.swift */,
+				040F03E32C1860A200208D89 /* RenderLayerGroup.swift */,
+				040F03D82C18509300208D89 /* Transform.swift */,
+				040F03E12C185C5200208D89 /* AudioConfiguration.swift */,
+				040C53402C12EBF800344898 /* KeyframeAnimation.swift */,
+				040C53422C12ED4E00344898 /* TimingFunction.swift */,
+				040C532A2C12E38A00344898 /* Source */,
+				040C532B2C12E3C000344898 /* Audio */,
+				040C532E2C12E3FA00344898 /* Text */,
+				040C532C2C12E3C800344898 /* Video */,
+				040C532D2C12E3D300344898 /* Render */,
+				040C532F2C12E40D00344898 /* Resources */,
+			);
+			path = VideoLab;
+			sourceTree = "<group>";
+		};
+		040C532A2C12E38A00344898 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				040F03D42C184E4C00208D89 /* Source.swift */,
+				04F6DB882C19A82E00CE5B82 /* AVAssetSource.swift */,
+				04F6DB8A2C19B42C00CE5B82 /* ImageSource.swift */,
+				040781472C1AC42F002F5B00 /* PHAssetVideoSource.swift */,
+				040781492C1AC5BC002F5B00 /* PHAssetImageSource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		040C532B2C12E3C000344898 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				04F6DB862C198B6C00CE5B82 /* AudioRenderLayer.swift */,
+				0400B9E52C1C23B600FF781B /* AudioRenderLayerGroup.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		040C532C2C12E3C800344898 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				04F6DB842C198B2E00CE5B82 /* VideoRenderLayer.swift */,
+				0407814B2C1AD5C3002F5B00 /* VideoRenderLayerGroup.swift */,
+				0400B9E72C1C2EC500FF781B /* VideoCompositionInstruction.swift */,
+				0400B9E92C1C3B0500FF781B /* VideoCompositor.swift */,
+				0400B9EB2C1C4BEB00FF781B /* LayerCompositor.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		040C532D2C12E3D300344898 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				0405A6632C5CBB9E00E70689 /* Utils */,
+				040C53322C12E42200344898 /* Base */,
+				040C53332C12E42600344898 /* Operations */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		040C532E2C12E3FA00344898 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				04FFD1FD2C7EF72500BE8A34 /* TextAnimationLayer.swift */,
+				04FFD1FF2C7F211D00BE8A34 /* TextOpacityAnimationLayer.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		040C532F2C12E40D00344898 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				040C53302C12E41600344898 /* BlankVideo.mov */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		040C53322C12E42200344898 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				040C53382C12E80A00344898 /* Color.swift */,
+				040C53392C12E80A00344898 /* Position.swift */,
+				040C533A2C12E80A00344898 /* Size.swift */,
+				040F03DA2C1855F700208D89 /* MathLibrary.swift */,
+				040F03D62C184FCA00208D89 /* Texture.swift */,
+				0402BA912C5A1F1500B67650 /* TextureCache.swift */,
+				04006C652C203D640005D2E9 /* OpenGLRender.swift */,
+				04006C672C2045BD0005D2E9 /* ShaderProgram.swift */,
+				04F0BB4D2C212DCF006B8430 /* ShaderUniformSettings.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		040C53332C12E42600344898 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				040F03DF2C18593600208D89 /* BasicOperation.swift */,
+				0421EA5C2C943BB40009DCC4 /* Passthrough.swift */,
+				04E40BBF2C929ADB00B634EE /* BrightnessAdjustment.swift */,
+				0410A1432C9ADD030081E7D6 /* LookupFilter.swift */,
+				0410A1452C9AE3D70081E7D6 /* ZoomBlurFilter.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040C52F22C12E34900344898 /* VideoLabOpenGLES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040C531D2C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLES" */;
+			buildPhases = (
+				040C52EF2C12E34900344898 /* Sources */,
+				040C52F02C12E34900344898 /* Frameworks */,
+				040C52F12C12E34900344898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoLabOpenGLES;
+			productName = VideoLabOpenGLES;
+			productReference = 040C52F32C12E34900344898 /* VideoLabOpenGLES.app */;
+			productType = "com.apple.product-type.application";
+		};
+		040C53082C12E34A00344898 /* VideoLabOpenGLESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040C53202C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLESTests" */;
+			buildPhases = (
+				040C53052C12E34A00344898 /* Sources */,
+				040C53062C12E34A00344898 /* Frameworks */,
+				040C53072C12E34A00344898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040C530B2C12E34A00344898 /* PBXTargetDependency */,
+			);
+			name = VideoLabOpenGLESTests;
+			productName = VideoLabOpenGLESTests;
+			productReference = 040C53092C12E34A00344898 /* VideoLabOpenGLESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		040C53122C12E34A00344898 /* VideoLabOpenGLESUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040C53232C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLESUITests" */;
+			buildPhases = (
+				040C530F2C12E34A00344898 /* Sources */,
+				040C53102C12E34A00344898 /* Frameworks */,
+				040C53112C12E34A00344898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040C53152C12E34A00344898 /* PBXTargetDependency */,
+			);
+			name = VideoLabOpenGLESUITests;
+			productName = VideoLabOpenGLESUITests;
+			productReference = 040C53132C12E34A00344898 /* VideoLabOpenGLESUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040C52EB2C12E34900344898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					040C52F22C12E34900344898 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					040C53082C12E34A00344898 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 040C52F22C12E34900344898;
+					};
+					040C53122C12E34A00344898 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 040C52F22C12E34900344898;
+					};
+				};
+			};
+			buildConfigurationList = 040C52EE2C12E34900344898 /* Build configuration list for PBXProject "VideoLabOpenGLES" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040C52EA2C12E34900344898;
+			productRefGroup = 040C52F42C12E34900344898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040C52F22C12E34900344898 /* VideoLabOpenGLES */,
+				040C53082C12E34A00344898 /* VideoLabOpenGLESTests */,
+				040C53122C12E34A00344898 /* VideoLabOpenGLESUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040C52F12C12E34900344898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0402BAAD2C5A465000B67650 /* LUT_M03.png in Resources */,
+				040C53312C12E41600344898 /* BlankVideo.mov in Resources */,
+				0405A66E2C5CBBB800E70689 /* Normal.vsh in Resources */,
+				0402BABC2C5A465000B67650 /* image2.HEIC in Resources */,
+				040C53002C12E34A00344898 /* Assets.xcassets in Resources */,
+				0408960C2C80790B0092469E /* ZoomBlurFilter.vsh in Resources */,
+				040896072C806DE90092469E /* BrightnessFilter.fsh in Resources */,
+				0405A66D2C5CBBB800E70689 /* Normal.fsh in Resources */,
+				0402BAB82C5A465000B67650 /* video1.MOV in Resources */,
+				0402BAB62C5A465000B67650 /* video3.MOV in Resources */,
+				0405A66F2C5CBBB800E70689 /* NormalBlend.fsh in Resources */,
+				0402BAB92C5A465000B67650 /* image3.HEIC in Resources */,
+				0402BAAB2C5A465000B67650 /* LUT_M01.png in Resources */,
+				0402BAB02C5A465000B67650 /* LUT_M12.png in Resources */,
+				0405A66C2C5CBBB800E70689 /* NormalBlend.vsh in Resources */,
+				0402BAB12C5A465000B67650 /* LUT_M11.png in Resources */,
+				0402BAB22C5A465000B67650 /* LUT_M05.png in Resources */,
+				040896052C806DE50092469E /* LookupFilter.fsh in Resources */,
+				0402BAC52C5A471D00B67650 /* Main.storyboard in Resources */,
+				0408960A2C8079050092469E /* ZoomBlurFilter.fsh in Resources */,
+				040896082C806DEC0092469E /* BrightnessFilter.vsh in Resources */,
+				0402BABF2C5A465000B67650 /* image1.JPG in Resources */,
+				0402BAAE2C5A465000B67650 /* LUT_M07.png in Resources */,
+				0402BAC42C5A471700B67650 /* LaunchScreen.xib in Resources */,
+				0402BABE2C5A465000B67650 /* test1.MP4 in Resources */,
+				0402BAAC2C5A465000B67650 /* LUT_M02.png in Resources */,
+				0405A66A2C5CBBB800E70689 /* YUVConversion.vsh in Resources */,
+				040896062C806DE70092469E /* LookupFilter.vsh in Resources */,
+				0405A66B2C5CBBB800E70689 /* YUVConversion.fsh in Resources */,
+				0402BAB32C5A465000B67650 /* LUT_M08.png in Resources */,
+				0402BAB42C5A465000B67650 /* LUT_M09.png in Resources */,
+				0402BAB52C5A465000B67650 /* video4.MOV in Resources */,
+				0402BAAF2C5A465000B67650 /* LUT_M06.png in Resources */,
+				0402BAB72C5A465000B67650 /* video2.MOV in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C53072C12E34A00344898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C53112C12E34A00344898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040C52EF2C12E34900344898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04006C682C2045BD0005D2E9 /* ShaderProgram.swift in Sources */,
+				04006C662C203D640005D2E9 /* OpenGLRender.swift in Sources */,
+				0407814C2C1AD5C3002F5B00 /* VideoRenderLayerGroup.swift in Sources */,
+				040781482C1AC42F002F5B00 /* PHAssetVideoSource.swift in Sources */,
+				0400B9EA2C1C3B0500FF781B /* VideoCompositor.swift in Sources */,
+				040C533D2C12E80B00344898 /* Size.swift in Sources */,
+				040C533F2C12EA7F00344898 /* RenderLayer.swift in Sources */,
+				040F03E02C18593600208D89 /* BasicOperation.swift in Sources */,
+				040C53412C12EBF800344898 /* KeyframeAnimation.swift in Sources */,
+				040C533C2C12E80B00344898 /* Position.swift in Sources */,
+				040C53372C12E76300344898 /* RenderComposition.swift in Sources */,
+				0410A1442C9ADD030081E7D6 /* LookupFilter.swift in Sources */,
+				040F03E22C185C5200208D89 /* AudioConfiguration.swift in Sources */,
+				04F6DB8B2C19B42C00CE5B82 /* ImageSource.swift in Sources */,
+				040C52F72C12E34900344898 /* AppDelegate.swift in Sources */,
+				040C53432C12ED4E00344898 /* TimingFunction.swift in Sources */,
+				04FFD2002C7F211D00BE8A34 /* TextOpacityAnimationLayer.swift in Sources */,
+				0402BAC72C5A48C400B67650 /* ViewController.swift in Sources */,
+				04E40BC02C929ADB00B634EE /* BrightnessAdjustment.swift in Sources */,
+				040F03D52C184E4C00208D89 /* Source.swift in Sources */,
+				04F6DB872C198B6C00CE5B82 /* AudioRenderLayer.swift in Sources */,
+				0402BA922C5A1F1500B67650 /* TextureCache.swift in Sources */,
+				040F03D92C18509300208D89 /* Transform.swift in Sources */,
+				0402BAC22C5A46A800B67650 /* PlayerViewController.swift in Sources */,
+				0421EA5D2C943BB40009DCC4 /* Passthrough.swift in Sources */,
+				04F6DB852C198B2E00CE5B82 /* VideoRenderLayer.swift in Sources */,
+				040C53352C12E48F00344898 /* VideoLab.swift in Sources */,
+				04FFD1FE2C7EF72500BE8A34 /* TextAnimationLayer.swift in Sources */,
+				040F03D72C184FCA00208D89 /* Texture.swift in Sources */,
+				040C533B2C12E80A00344898 /* Color.swift in Sources */,
+				04F6DB892C19A82E00CE5B82 /* AVAssetSource.swift in Sources */,
+				0400B9E62C1C23B600FF781B /* AudioRenderLayerGroup.swift in Sources */,
+				0410A1462C9AE3D80081E7D6 /* ZoomBlurFilter.swift in Sources */,
+				040F03DB2C1855F700208D89 /* MathLibrary.swift in Sources */,
+				040F03E42C1860A200208D89 /* RenderLayerGroup.swift in Sources */,
+				0400B9EC2C1C4BEB00FF781B /* LayerCompositor.swift in Sources */,
+				0407814A2C1AC5BC002F5B00 /* PHAssetImageSource.swift in Sources */,
+				04F0BB4E2C212DCF006B8430 /* ShaderUniformSettings.swift in Sources */,
+				0400B9E82C1C2EC500FF781B /* VideoCompositionInstruction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C53052C12E34A00344898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040C530E2C12E34A00344898 /* VideoLabOpenGLESTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040C530F2C12E34A00344898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040C53182C12E34A00344898 /* VideoLabOpenGLESUITests.swift in Sources */,
+				040C531A2C12E34A00344898 /* VideoLabOpenGLESUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040C530B2C12E34A00344898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040C52F22C12E34900344898 /* VideoLabOpenGLES */;
+			targetProxy = 040C530A2C12E34A00344898 /* PBXContainerItemProxy */;
+		};
+		040C53152C12E34A00344898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040C52F22C12E34900344898 /* VideoLabOpenGLES */;
+			targetProxy = 040C53142C12E34A00344898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		040C531B2C12E34A00344898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		040C531C2C12E34A00344898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040C531E2C12E34A00344898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoLabOpenGLES/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "存储视频";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.xib;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		040C531F2C12E34A00344898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoLabOpenGLES/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "存储视频";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.xib;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		040C53212C12E34A00344898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLESTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoLabOpenGLES.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VideoLabOpenGLES";
+			};
+			name = Debug;
+		};
+		040C53222C12E34A00344898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLESTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoLabOpenGLES.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VideoLabOpenGLES";
+			};
+			name = Release;
+		};
+		040C53242C12E34A00344898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLESUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoLabOpenGLES;
+			};
+			name = Debug;
+		};
+		040C53252C12E34A00344898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N46N333L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.VideoLabOpenGLESUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoLabOpenGLES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040C52EE2C12E34900344898 /* Build configuration list for PBXProject "VideoLabOpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040C531B2C12E34A00344898 /* Debug */,
+				040C531C2C12E34A00344898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040C531D2C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040C531E2C12E34A00344898 /* Debug */,
+				040C531F2C12E34A00344898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040C53202C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040C53212C12E34A00344898 /* Debug */,
+				040C53222C12E34A00344898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040C53232C12E34A00344898 /* Build configuration list for PBXNativeTarget "VideoLabOpenGLESUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040C53242C12E34A00344898 /* Debug */,
+				040C53252C12E34A00344898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 040C52EB2C12E34900344898 /* Project object */;
+}
