@@ -1,5 +1,6 @@
 # 这个项目是参照[VideoLab](https://github.com/ruanjx/VideoLab)进行OpenGL ES方式开发的。还参照了GPUImage和[MFPixelBufferHelper](https://github.com/lmf12/blog-demo/blob/0e3001e0a2dea50eb8254659c1d6481b148fd9de/testVideoFilter/testVideoFilter/Utils/MFPixelBufferHelper.h#L2).
 
+# 注意⚠️：Demo中的视频到VideoLab中自行下载
 
 # VideoLab - 高性能且灵活的 iOS 视频剪辑与特效框架
 
